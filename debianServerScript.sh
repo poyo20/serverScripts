@@ -17,4 +17,4 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo docker volume create yacht
 sudo docker run -d -p 8000:8000 -v --name yacht --restart unless-stopped /var/run/docker.sock:/var/run/docker.sock -v yacht:/config selfhostedpro/yacht
-reboot
+sudo shutdown
